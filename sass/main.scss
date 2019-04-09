@@ -19,8 +19,8 @@ a {
   img {
     width: 100vw;
     @media (min-width: 768px) {
-      /* height: 100vh; */
-      width: 100vw;
+      height: 80vh;
+      /* width: 100%; */
       object-fit: cover;
     }
   }
@@ -44,10 +44,12 @@ a {
   }
 
   #test {
-    height: 50px;
-    width: 50px;
-    background: black;
-  }
+  height: 60px;
+  width: 60px;
+  background: url('../img/nadel-logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
   #bar-2 {
     padding-top: 4vh;
@@ -68,6 +70,12 @@ a {
   width: 100%;
   margin: 0px;
   padding: 0px;
+  a {
+    color: #4E664E;
+    &:hover {
+      color: #000;
+    }
+  }
   .row {
     width: 100%;
     margin: 0px;
@@ -116,8 +124,25 @@ a {
     /* border: 1px solid green; */
     background: #4E664E;
     color: #fff;
+    .blockquote-footer {
+      color: #e1e1e1;
+    }
   }
 } // - /desktop-menu
+
+#media-content {
+  ul {
+    li {
+      a {
+        color: #fff !important;
+        text-decoration: underline;
+        &:hover {
+          color: #000 !important;
+        }
+      }
+    }
+  }
+}
 
 #footer {
   background: #eee;
